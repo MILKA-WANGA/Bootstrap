@@ -8,12 +8,30 @@
 
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-md">
         <a href="#intro" class="brand-navbar">
             <span class="fw-bold text-secondary">
-                Home 
+                <img src="asset\logo.png" alt="" srcset="" width="50" height="50" class="rounded border border-danger">
             </span>
         </a>
+        <!-- Toggle button for mobile navbar -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="navbar collapse navbar-collapse justify-content-end text-align-center">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">Hidden brand</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+            </div>
     </nav>
     <section id="intro">
         <div class="container-lg">
