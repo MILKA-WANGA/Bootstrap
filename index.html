@@ -15,10 +15,12 @@
 <body>
     <nav class="navbar navbar-expand-md   navbar-light">
         <a href="#intro" class="brand-navbar">
-            <span class="fw-bold text-secondary">
-                <img src="asset\logo.png" alt="" srcset="" width="50" height="50"
+            <div class=" fw-bold text-secondary" data-bs-placement="top" title="TechBiWaMi"class="tt">
+                <span  class=".tt">                <img src="asset\logo.png" alt="" srcset="" width="50" height="50"
                     class="rounded border border-danger ms-5">
-            </span>
+                </span>
+            
+            </div>
         </a>
         <!-- Toggle button for mobile navbar -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
@@ -257,6 +259,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+        <script>
+        const tooltipTriggerList = document.querySelectorAll('.tt')
+        tooltipTriggerList.forEach(t => {
+            new bootstrap.tooltip[t]
+            
+        });
+</script>
 </body>
 
 </html>
