@@ -7,7 +7,7 @@ $gray-100:#fbf5e5;
 // customize theme-colors
 $custom-theme-color:(
  "altlight": #e09fc5,
- "darklight": #522192
+ "darklight": #d89912
 );
 // merge theme colors
 $theme-colors:map-merge($custom_theme_color,$theme-colors);

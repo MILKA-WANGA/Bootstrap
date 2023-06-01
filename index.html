@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-light">
+    <nav class="navbar navbar-expand-md bg-light  ">
         <a href="#intro" class="brand-navbar">
             <div class=" fw-bold text-secondary" data-bs-placement="top" title="TechBiWaMi"class="tt">
                 <span  class=".tt">                <img src="asset\logo.png" alt="" srcset="" width="50" height="50"
@@ -28,12 +28,13 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
-        <div class="navbar collapse navbar-collapse justify-content-end text-align-center">
+        <div class="navbar collapse navbar-collapse justify-content-end text-align-center ">
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <a class="navbar-brand pt-2" href="#">TechBiWaMi</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-darklight" >
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0  ">
+                    
+                    <li class="nav-item" >
+                        <a class="nav-link active tab-pane"  aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About </a>
@@ -53,7 +54,39 @@
                 </ul>
             </div>
         </div>
+        
     </nav>
+    <!-- tabs -->
+    <nav>
+        <div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Messages</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+        </li>
+      </ul>
+      
+      
+      </div>
+      </nav>
+      
+      <script>
+        var firstTabEl = document.querySelector('#myTab li:last-child a')
+        var firstTab = new bootstrap.Tab(firstTabEl)
+      
+        firstTab.show()
+      </script>
+      
+    </div>
+   
 
     <section id="intro"  >
         <div class="container-lg">
