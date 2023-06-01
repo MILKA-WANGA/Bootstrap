@@ -1,3 +1,15 @@
+// customize colors
 $primary:#c29938;
 $gray-100:#fbf5e5;
+// import function and variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+// customize theme-colors
+$custom-theme-color:(
+ "altlight": #e09fc5,
+ "darklight": #522192
+);
+// merge theme colors
+$theme-colors:map-merge($custom_theme_color,$theme-colors);
+// import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
